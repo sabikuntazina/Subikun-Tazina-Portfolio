@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabikun Enam Tazina | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">Tazina</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Sabikun Enam Tazina</h1>
+                <div class="hero-typing">
+                    <span id="typingText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-tagline">Student | Frontend Developer | React Learner</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-placeholder">
+                        <img src="./assets/myphoto.png" alt="">
+                    </div>
+                    <div class="image-ring ring-1"></div>
+                    <div class="image-ring ring-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content  ">
+                <div class="about-image ">
+                    <div class="about-image-wrapper">
+                        <div class="image-card">
+                           <img src="./assets/myphoto.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-heading">Who I Am</h3>
+                    <p class="about-description">
+                        I am a passionate student and aspiring frontend developer with a strong interest in building modern, 
+                        responsive web applications. I enjoy learning new technologies and continuously improving my coding skills. 
+                        Currently, I am focusing on mastering React and Next.js to build fast and scalable web applications.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-user"></i>
+                            <span><strong>Name:</strong> Sabikun Enam Tazina</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span><strong>Email:</strong> sabikuntazina@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><strong>Location:</strong> Bangladesh</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span><strong>Role:</strong> Student & Frontend Developer</span>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1+</span>
+                            <span class="stat-label">Years Learning</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Skills</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Abilities</span>
+                <h2 class="section-title">Skills</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Frontend Development
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="html">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span class="skill-name">HTML</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="css">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span class="skill-name">CSS</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="javascript">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="react">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span class="skill-name">React</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="--progress: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="nextjs">
+                            <div class="skill-icon">
+                                <span class="nextjs-icon">N</span>
+                            </div>
+                            <span class="skill-name">Next.js</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="--progress: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-laptop-code"></i>
+                        Programming
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="c">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span class="skill-name">C</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="cpp">
+                            <div class="skill-icon">
+                                <i class="fas fa-file-code"></i>
+                            </div>
+                            <span class="skill-name">C++</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Other Skills
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="responsive">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="git">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="--progress: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="problem">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <span class="skill-name">Problem Solving</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/sabikuntazina" target="_blank" class="project-link" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p class="project-description">A responsive personal portfolio website designed using HTML, CSS, and JavaScript.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/sabikuntazina" target="_blank" class="btn btn-small btn-outline">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-small btn-primary">
+                                <i class="fas fa-eye"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/sabikuntazina" target="_blank" class="project-link" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">DigitalTools</h3>
+                        <p class="project-description">A modern and responsive web application where users can explore digital products, add them to a cart, and purchase easily with a smooth and interactive UI.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">DaisyUI</span>
+                            <span class="tech-tag">React-Toastify</span>
+                        </div>
+                        <div class="project-features">
+                            <small><i class="fas fa-check"></i> Smart Cart System</small>
+                            <small><i class="fas fa-check"></i> Toggle View</small>
+                            <small><i class="fas fa-check"></i> Toast Notifications</small>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/sabikuntazina" target="_blank" class="btn btn-small btn-outline">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-small btn-primary">
+                                <i class="fas fa-eye"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/sabikuntazina" target="_blank" class="project-link" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">KeenKeeper</h3>
+                        <p class="project-description">A responsive friendship management web application that helps users stay connected with friends by tracking interactions, managing contact goals, and maintaining communication history.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Recharts</span>
+                            <span class="tech-tag">React Router</span>
+                        </div>
+                        <div class="project-features">
+                            <small><i class="fas fa-check"></i> Friend Profile Management</small>
+                            <small><i class="fas fa-check"></i> Timeline Filtering</small>
+                            <small><i class="fas fa-check"></i> Analytics Dashboard</small>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/sabikuntazina" target="_blank" class="btn btn-small btn-outline">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-small btn-primary">
+                                <i class="fas fa-eye"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What I Offer</span>
+                <h2 class="section-title">Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Frontend Web Development</h3>
+                    <p class="service-description">Creating modern and responsive websites using HTML, CSS, JavaScript, React, and Next.js.</p>
+                    <div class="service-hover"></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Responsive Web Design</h3>
+                    <p class="service-description">Designing websites that work perfectly on mobile, tablet, and desktop devices.</p>
+                    <div class="service-hover"></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3 class="service-title">Bug Fixing</h3>
+                    <p class="service-description">Fixing layout issues, responsiveness problems, and JavaScript bugs.</p>
+                    <div class="service-hover"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Journey</span>
+                <h2 class="section-title">Resume</h2>
+            </div>
+            <div class="resume-content">
+                <div class="resume-section">
+                    <h3 class="resume-heading">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Current - 8th Semester (3rd Year)</span>
+                                <h4 class="timeline-title">Bachelor of Science (B.Sc.) in Computer Science & Engineering (CSE)</h4>
+                                <p class="timeline-place">Northern University Bangladesh</p>
+                                <p class="timeline-description">Currently pursuing undergraduate degree in Computer Science & Engineering while actively learning and building web development projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-section">
+                    <h3 class="resume-heading">
+                        <i class="fas fa-bullseye"></i>
+                        Future Goals
+                    </h3>
+                    <div class="goals-list">
+                        <div class="goal-item">
+                            <div class="goal-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="goal-content">
+                                <h4>Becoming a Professional Frontend Developer</h4>
+                                <p>Building a career in frontend development with expertise in modern frameworks.</p>
+                            </div>
+                        </div>
+                        <div class="goal-item">
+                            <div class="goal-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="goal-content">
+                                <h4>Mastering React and Next.js</h4>
+                                <p>Deep diving into advanced React patterns and Next.js features for production apps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-download">
+                <a href="#" class="btn btn-primary btn-large" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's Talk</h3>
+                    <p class="contact-text">Feel free to reach out to me for any questions or opportunities. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="detail-label">Email</span>
+                                <a href="mailto:sabikuntazina@gmail.com" class="detail-value">sabikuntazina@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="detail-label">GitHub</span>
+                                <a href="https://github.com/sabikuntazina" target="_blank" class="detail-value">github.com/sabikuntazina</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="detail-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/sabikun-enam-tazina-/" target="_blank" class="detail-value">linkedin.com/in/sabikun-enam-tazina-</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">Bangladesh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/sabikuntazina" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sabikun-enam-tazina-/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:sabikuntazina@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Tazina</span>
+                    <p class="footer-text">Student & Frontend Developer passionate about creating modern web experiences.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/sabikuntazina" target="_blank" class="footer-social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sabikun-enam-tazina-/" target="_blank" class="footer-social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Sabikun Enam Tazina. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
