@@ -34,6 +34,26 @@ const themeManager = {
     }
 };
 
+const reveals = document.querySelectorAll('.reveal');
+
+function revealOnScroll() {
+  reveals.forEach((el) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+    const visible = 100;
+
+    if (elementTop < windowHeight - visible) {
+      el.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
+
+
+
 // ============================================
 // Typing Animation
 // ============================================
@@ -177,36 +197,12 @@ const activeNavLink = {
 };
 
 // ============================================
-// Scroll Reveal Animation
+// Scroll Reveal Animation (Disabled for all elements)
 // ============================================
 const scrollReveal = {
     init() {
-        // Only animate section headers, exclude skill, project, service, resume, contact cards
-        const reveals = document.querySelectorAll('.section-header');
-        
-        const revealOnScroll = () => {
-            const windowHeight = window.innerHeight;
-            const elementVisible = 100;
-            
-            reveals.forEach((reveal) => {
-                const elementTop = reveal.getBoundingClientRect().top;
-                
-                if (elementTop < windowHeight - elementVisible) {
-                    reveal.style.opacity = '1';
-                    reveal.style.transform = 'translateY(0)';
-                }
-            });
-        };
-        
-        // Initial styles for headers only
-        reveals.forEach(reveal => {
-            reveal.style.opacity = '0';
-            reveal.style.transform = 'translateY(30px)';
-            reveal.style.transition = 'all 0.8s ease';
-        });
-        
-        window.addEventListener('scroll', { passive: true }, revealOnScroll);
-        revealOnScroll(); // Trigger on load
+        // Section headers now visible by default - no scroll animations
+        // All cards and items display immediately without scroll-triggered effects
     }
 };
 
